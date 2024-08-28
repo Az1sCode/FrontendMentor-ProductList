@@ -1,74 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product list with cart</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Link Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
 
-  Desserts
+    <!-- Link SCSS -->
+    <link rel="stylesheet" href="./dist/css/style.min.css" />
 
-  Waffle with Berries
-  Waffle
-  6.50
-  Add to Cart
-
-  Vanilla Bean Crème Brûlée
-  Crème Brûlée
-  7.00
-  Add to Cart
-
-  Macaron Mix of Five
-  Macaron
-  8.00
-  Add to Cart
-
-  Classic Tiramisu
-  Tiramisu
-  5.50
-  Add to Cart
-
-  Pistachio Baklava
-  Baklava
-  4.00
-  Add to Cart
-
-  Lemon Meringue Pie
-  Pie
-  5.00
-  Add to Cart
-
-  Red Velvet Cake
-  Cake
-  4.50
-  Add to Cart
-
-  Salted Caramel Brownie
-  Brownie
-  4.50
-  Add to Cart
-
-  Vanilla Panna Cotta
-  Panna Cotta
-  6.50
-  Add to Cart
-
-  Your Cart (<!-- Quantity -->)
-  Your added items will appear here
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <title>Frontend Mentor | Product list with cart</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="product-content">
+        <h1>Desserts</h1>
+        <div class="product-list">
+          <div class="product-detail" id="1">
+            <img
+              src="./assets/images/image-waffle-desktop.jpg"
+              alt="Gambar Product"
+            />
+            <span>Waffle</span>
+            <p>Waffle with Berries</p>
+            <p>$6.50</p>
+            <div class="button-state">
+              <button id="btn-addToCart">
+                <img src="./assets/images/icon-add-to-cart.svg" alt="Icon Add to Cart">
+                Add to Cart
+              </button>
+              <!-- <div class="btn-productAmount">
+                <button class="btn-addSubstract" id="btn-substract">-</button>
+                1
+                <button class="btn-addSubstract" id="btn-add">+</button>
+                </button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <aside class="cart-container">
+        <h2>Your Cart (<span id="amount-cart">0</span>)</h2>
+        <div class="cart-state">
+          <div class="empty-cart">
+            <img
+              src="./assets/images/illustration-empty-cart.svg"
+              alt="Empty Cart Image"
+            />
+            <span>Your added item will appear here</span>
+          </div>
+          <div class="display-cart">
+            <div class="product-cart">
+              <div class="detail-cart-product">
+                <h3>Classic Tiramisu</h3>
+                <div class="amount-price">
+                  <p class="amount-order">1x</p>
+                  <p class="price-cart">@$5.50</p>
+                  <p class="price-total">@$5.50</p>
+                </div>
+              </div>
+              <button>
+                <img
+                  src="./assets/images/icon-remove-item.svg"
+                  alt="Remove Icon"
+                />
+              </button>
+            </div>
+            <div class="order-total">
+              <p>Order total:</p>
+              <p>$46.60</p>
+            </div>
+            <div class="delivery-note">
+              <img
+                src="./assets/images/icon-carbon-neutral.svg"
+                alt="Icon Carbon"
+              />
+              This is a <b>carbon-neutral</b> delivery.
+            </div>
+            <button id="btn-confirmOrder">Confirm Order</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,29 @@
+$font: 'Red Hat Text', sans-serif;
+$primary-color: hsl(14, 86%, 42%);
+$secondary-color: hsl(159, 69%, 38%);
+$background-color: hsl(20, 50%, 98%);
+$dark-color: hsl(14, 65%, 9%);
+$weaker-color: hsl(14, 25%, 72%);
+
+@mixin buttonTheme($theme: white, $font-size: 0.8em, $font-color: $dark-color) {
+    border: 1px solid $primary-color;
+    background: $theme;
+    font-size: $font-size;
+    font-weight: 600;
+    color: $font-color;
+    border-radius: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: $background-color;
+    padding: 100px 115px;
+
+    font-family: $font;
+}
