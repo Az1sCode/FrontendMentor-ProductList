@@ -1,0 +1,39 @@
+
+.product-detail {
+    height: 342px;
+    max-width: 251px;
+
+    display: flex;
+    flex-direction: column;
+    // gap: 0.8rem;
+    color: $dark-color;
+
+    img {
+        border-radius: 0.5rem;
+        object-fit: cover;
+        margin-bottom: 2.5rem;
+    }
+
+    span {
+        font-size: 0.8em;
+        font-weight: 400;
+        margin-bottom: 0.4rem;
+        color: $weaker-color;
+    }
+    
+    P {
+        font-size: 1em;
+        font-weight: 600;
+        margin-bottom: 0.4rem;
+
+        &:last-of-type {
+            color: $primary-color;
+        }
+    }
+}
+
+.button-state {
+    width: 161px;
+    position: absolute;
+    translate: 50px 220px;
+}

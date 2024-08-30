@@ -40,7 +40,10 @@
             <p>$6.50</p>
             <div class="button-state">
               <button id="btn-addToCart">
-                <img src="./assets/images/icon-add-to-cart.svg" alt="Icon Add to Cart">
+                <img
+                  src="./assets/images/icon-add-to-cart.svg"
+                  alt="Icon Add to Cart"
+                />
                 Add to Cart
               </button>
               <!-- <div class="btn-productAmount">
@@ -55,46 +58,62 @@
       </section>
       <aside class="cart-container">
         <h2>Your Cart (<span id="amount-cart">0</span>)</h2>
-        <div class="cart-state">
-          <div class="empty-cart">
+        <!-- <div class="empty-cart">
             <img
               src="./assets/images/illustration-empty-cart.svg"
               alt="Empty Cart Image"
             />
             <span>Your added item will appear here</span>
-          </div>
-          <div class="display-cart">
+          </div> -->
+        <div class="display-cart">
+          <div class="list-cart">
             <div class="product-cart">
               <div class="detail-cart-product">
                 <h3>Classic Tiramisu</h3>
                 <div class="amount-price">
                   <p class="amount-order">1x</p>
-                  <p class="price-cart">@$5.50</p>
-                  <p class="price-total">@$5.50</p>
+                  <p><span id="price-product">@$5.50</span> <span id="price-total">$5.50</span></p>
                 </div>
               </div>
-              <button>
+              <button class="button-close">
                 <img
                   src="./assets/images/icon-remove-item.svg"
                   alt="Remove Icon"
                 />
               </button>
             </div>
-            <div class="order-total">
-              <p>Order total:</p>
-              <p>$46.60</p>
+            <div class="product-cart">
+              <div class="detail-cart-product">
+                <h3>Classic Tiramisu</h3>
+                <div class="amount-price">
+                  <p class="amount-order">1x</p>
+                  <p><span id="price-product">@$5.50</span> <span id="price-total">$5.50</span></p>
+                </div>
+              </div>
+              <button class="button-close">
+                <img
+                  src="./assets/images/icon-remove-item.svg"
+                  alt="Remove Icon"
+                />
+              </button>
             </div>
-            <div class="delivery-note">
-              <img
-                src="./assets/images/icon-carbon-neutral.svg"
-                alt="Icon Carbon"
-              />
-              This is a <b>carbon-neutral</b> delivery.
-            </div>
-            <button id="btn-confirmOrder">Confirm Order</button>
           </div>
+          <div class="line"></div>
+          <div class="order-total">
+            <p>Order total:</p>
+            <p>$46.60</p>
+          </div>
+          <div class="delivery-note">
+            <img
+              src="./assets/images/icon-carbon-neutral.svg"
+              alt="Icon Carbon"
+            />
+            This is a<b>carbon-neutral</b>delivery.
+          </div>
+          <button class="btn-confirm" id="btn-confirmOrder">Confirm Order</button>
         </div>
       </aside>
     </div>
+    <script src="script/script.js"></script>
   </body>
 </html>
