@@ -1,5 +1,6 @@
 
-#btn-addToCart {
+.btn-addToCart {
+    display: inline;
     width: 100%;
     height: 41px;
 
@@ -23,11 +24,10 @@
     @include buttonTheme($theme: $primary-color, $font-size: 0.8em, $font-color: white);
     font-family: $font;
 
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
-
 }
 
 .btn-addSubstract {
@@ -36,6 +36,7 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
+    cursor: pointer;
 
     color: white;
     text-align: center;

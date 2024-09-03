@@ -23,7 +23,8 @@
 }
 
 .cart-container {
-    min-width: 384px;
+    min-width: 354px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     // flex: 1;
